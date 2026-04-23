@@ -77,7 +77,7 @@
 
         $(function onDocumentReady() {
             function getSchemeName() {
-                return "{{ 'vscode' }}";
+                return "{{ env('DEBUGBAR_EDITOR','vscode') }}";
             }
 
             function getBasePath() {
